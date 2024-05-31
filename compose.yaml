@@ -1,0 +1,9 @@
+name: access-token-practice
+
+services:
+  auth:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" # Expose container port 8000 to host port 8000  
